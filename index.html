@@ -124,6 +124,32 @@
         #contenedor-clientes article h3 { font-style: italic;}
         #contenedor-clientes article img { width: 40%;border-radius: 50%;}
         #izquierda, #derecha { width: 40%;}
+
+        @media (max-width:600px) {
+            /*
+            nav {
+                display: block;
+            }
+            nav a {
+                display: block;
+                text-align: center;
+            }*/
+
+            nav {
+                flex-wrap: wrap;
+                position: static; /*Con esto se queda como debería ser por defecto*/
+            }
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+            #contenedor-servicios {
+                flex-wrap: wrap; /*lo rompe*/
+            }
+            #izquierda,#derecha {
+                width: 100%;
+            }
+        }
     </style>
     <script src="https://kit.fontawesome.com/fe060c3d5b.js" crossorigin="anonymous"></script>
 </head>
